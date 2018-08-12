@@ -1,0 +1,39 @@
+
+
+
+.navbar:after{
+  content:"";
+  display:table;
+  clear:both;
+  }
+  
+  @media (min-width: 768px){
+   .logo{
+  float:left !important;
+    }
+  }
+  @media(max-width:540px){
+    .navbar2{
+      float:right;
+    }
+  }
+  @media (min-width: 768px){
+  .navbar-right
+  {
+  float:right !important;
+  }
+  }
+  
+  @media (min-width: 768px){
+    .navbar2{
+      display: block !important; 
+      /*overflow:visible !important;*/
+      height:auto !important;/*height：auto作用？*/
+    }
+  }
+  
+  @media (min-width: 768px){
+  .navbar-nav > li {
+      float: left !important;
+  }
+  }

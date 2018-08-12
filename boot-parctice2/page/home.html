@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--bootStrap-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../style/home.css">
+</head>
+
+<body>
+  <!--工具栏-->
+  <nav class="navbar bg-light navebar-light">
+    <div>
+      <span style="color:red">language:</span>
+      <button class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown" data-target="#menu1" type="button">
+        中文
+        <span class="dropdown-icon"></span>
+      </button>
+      <ul class="dropdown-menu" id="menu1">
+        <li class="dropdown-item">
+          <a href="#" class="text-dark">中文</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="#" class="text-dark">日本语</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="#" class="text-dark">English</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="btn-group btn-light">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-target="#qqmenu">qq</button>
+      <div class="dropdown-menu" id="qqmenu">
+        <a href="#" class="dropdown-item bg-primary text-white">客服2864066642</a>
+        <a href="#" class="dropdown-item bg-primary text-white">内测群417863444</a>
+        <div class="dropdown-header">用户交流群</div>
+        <a href="#" class="dropdown-item border border-primary ">客服2864066642</a>
+        <a href="#" class="dropdown-item border border-primary">客服2864066642</a>
+        <a href="#" class="dropdown-item border border-primary">客服2864066642</a>
+      </div>
+      <button type="button" class="btn">微信</button>
+      <button type="button" class="btn">新浪</button>
+      <button type="button" class="btn">邮件</button>
+    </div>
+  </nav>
+
+  <!--折叠导航栏-->
+  <div class="container-fluid " style="min-width:480px">
+      <div class="row">
+  
+      <nav class="navbar navbar-expand-sm navbar-light navbar2 col-md-10 offset-md-1">
+          <img src="../image/logo.svg" style="height:70px;" class="logo">
+          <!--<div>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"><!--导航栏右对齐-->
+          <ul class="navbar-nav nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" data-toggle="pill">首页</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill">MoboPlayer</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill">播放组件</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill">软件外包</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill">商务合作</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill">合作伙伴</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill">关于我们</a>
+            </li>
+          </ul>
+        </div>
+        <!--</div>-->
+      </nav>
+      </div>
+    </div>
+
+  <!--图片轮播-->
+  <div id="img-carousel" class="carousel slide" data-ride="carousel" style="width:100%;">
+
+    <!-- 指示符 -->
+    <ul class="carousel-indicators">
+      <li data-target="#img-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#img-carousel" data-slide-to="1"></li>
+      <li data-target="#img-carousel" data-slide-to="2"></li>
+    </ul>
+
+    <!-- 轮播图片 -->
+    <div class="carousel-inner" style="background-color:#743DD2">
+      <div class="carousel-item active">
+        <img src="../image/banner01@2x.png">
+      </div>
+      <div class="carousel-item" style="background-color:#FF9762">
+        <img src="../image/banner02@2x.png">
+      </div>
+      <div class="carousel-item" style="background-color:#0855BD">
+        <img src="../image/banner03@2x.png">
+      </div>
+      <div class="carousel-item" style="background-color: #00E5BB">
+        <img src="../image/banner04@2x.png">
+      </div>
+    </div>
+
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev" href="#img-carousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#img-carousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+
+
+  <!--底部文字,栅格布局-->
+  <div class="container-fluid" style="margin:100px 0">
+    <!--col-md-3-->
+    <div class="row">
+      <div class="offset-md-1 col-md-10">
+        <div class="row my-bottom">
+          <div class="col-md div1">
+            <h5 class="text-success">练习内容</h5>
+            <p style="color:red">参考四叶草官网，自己做了一个bootstrap的练习。复现了四叶草官网首页
+              用了四叶草官网的图片资源。用到了bootstrap的导航栏类，card类，轮播图，下拉菜单，响应式布局等</p>
+          </div>
+
+          <div class="col-md div2">
+            <!--style="margin:0 3%;" -->
+            <h5 class="text-danger">MoboPlayer</h5>
+            <p>MoboPlayer是济南四叶草信息技术有限公司自主研发的全格式支持播放器，涵盖多种字幕支持、全部循环模式、小窗口多窗口悬浮播放、倍速播放等多种功能。</p>
+          </div>
+
+          <div class="col-md div3">
+            <h5 class="text-primary">企业服务</h5>
+            <p>济南四叶草信息技术有限公司开展自有app运营、软件项目外包、广告推广服务、软件预装合作、视频资源合作等多项业务。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-1">
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--bootStrap-->
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
